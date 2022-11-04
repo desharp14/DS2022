@@ -1,0 +1,20 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{ctex}
+\usepackage{listings}
+
+\title{作业四：二叉树和节点的逻辑设计}
+\author{陈俊铭 3210300364 （信息与计算科学）}
+\date{\today}
+
+\begin{document}
+\maketitle
+\section*{设计思路}
+Node是一种数据结构，是存储一个值的各种不同节点的基础类。Node 类的实现应该具有获取存储在 Node 中的值、获取下一个节点以及设置到下一个节点的链接的方法。
+
+BinaryTree 是一种非线性数据结构，其中每个节点最多只有两个分支（即不存在分支度大于2的节点）的树结构。BinaryTree 的函数包括构造，析构函数，实现找最大最小元素，判断元素是否存在树中，打印，清空树，判断树是否为空，以及插入和删除功能。
+
+BinarySearchTree 是具有结构化节点组织的 Binary Tree，主要用于排序、检素和搜索数据的树。BinarySearchTree 自然继承 BinaryTree 的所有函数，同时新增 BinarySearchTree 特有的函数如 findMax()、findMin() 等，
+
+AvlTree 是一种自平衡的 BinaryTree，主要控制 BinaryTree 的高度。类似，AvlTree 继承 BinaryTree 的所有函数，同时新增 BinarySearchTree 特有的函数，如rotate()、balance()和 height()。
+
+\end{document}
