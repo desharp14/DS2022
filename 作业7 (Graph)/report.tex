@@ -1,0 +1,44 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{ctex}
+\usepackage{listings}
+
+\title{作业七：图的模板类设计}
+\author{陈俊铭 3210300364 （信息与计算科学）}
+\date{\today}
+
+\begin{document}
+\maketitle
+\section{设计思路}
+构造两个结构体 Edge 和 Vertex，用于存储路径和节点。
+可用 vector < vector < WeightType > > 进行邻接矩阵的存储，vector < list < Edge >> 进行邻接表的存储。
+
+\section{测试结果}
+\noindent Test adj\_mat: \\
+- Vertexes:\\
+A B C D\\
+- Edges:\\
+(A,B,2)\\
+(A,C,2)\\
+(C,C,4)\\
+(D,C,4)\\
+
+\noindent Test adj\_list:\\
+- Vertexes:\\
+A B C D\\
+- Edges:\\
+(A,B,2)\\
+(A,C,1)\\
+(A,C,2)\\
+(C,C,4)\\
+(D,C,4)\\
+
+\noindent Test undirected graph:\\
+- Vertexes:\\
+A B C D\\
+- Edges:\\
+(A,B,1)\\
+(A,D,1)\\
+(B,C,1)\\
+(C,D,1)\\
+
+\end{document}
