@@ -1,0 +1,39 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{ctex}
+\usepackage{listings}
+
+\title{作业八：Bellman-Ford 算法的实现}
+\author{陈俊铭 3210300364 （信息与计算科学）}
+\date{\today}
+
+\begin{document}
+\maketitle
+\pagenumbering{gobble}
+\section{设计思路}
+Bellman-Ford算法是一种处理存在 负权边的单元最短路问题的算法。
+
+测试步骤：
+\begin{itemize}
+\item 通过Bellman-Ford 算法，检查正确性
+\item 测试是否有负权循
+\item 测试试运行时间和复杂度
+\end{itemize}
+
+\section{测试结果}
+\noindent Bellman Ford:\\
+- delta(s,s)0\\
+- delta(s,t)2\\
+- delta(s,x)4\\
+- delta(s,y)7\\
+- delta(s,z)-2\\
+
+\noindent Negative weighted detected.\\
+
+\noindent Test complexity(s):\\
+|V|         500         1000        2000        4000\\
+|E|= 2*|V|  0.011       0.038       0.159       0.736\\
+|E|= 4*|V|  0.017       0.061       0.249       1.14\\
+|E|= 8*|V|  0.026       0.108       0.497       2.466\\
+|E|= 16*|V| 0.072       0.25        1.157       6.199\\
+
+\end{document}
