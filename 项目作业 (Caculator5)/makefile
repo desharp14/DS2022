@@ -1,6 +1,3 @@
-test:
-	g++ -o test main.cpp
-
 report:
 	xelatex report.tex
 	rm report.aux
