@@ -1,0 +1,32 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{ctex}
+\usepackage{listings}
+
+\title{项目作业：五则运算计算器的实现}
+\author{陈俊铭 3210300364 （信息与计算科学）}
+\date{\today}
+
+\begin{document}
+\maketitle
+\pagenumbering{gobble}
+\section{设计思路}
+\begin{itemize}
+\item 通过 double strtd 和 string dts 转换 double 类型的数据和 string 类型的数据；
+\item check 函数判断输入是否合法；
+\item insert 插入数与符号；
+\item priority 判断运算符的优先级;
+\item 最终 calculate 完整计算。
+\end{itemize}
+
+\section{测试结果}
+\noindent 
+Input1: 2ˆ(1 + 3) − 5 ∗ (15.23)/(1 + 2) ∗ 3 − 5\\
+Output1: 2ˆ(1 + 3) − 5 ∗ (15.23)/(1 + 2) ∗ 3 − 5 = −65.1499\\
+Input2: 1.25 + (3 ∗ (1 + 2ˆ2) ∗ 3 − 43)ˆ(4 − 2)\\
+Output2: 1.25 + (3 ∗ (1 + 2ˆ2) ∗ 3 − 43)ˆ(4 − 2) = 5.25\\
+Input3: 2ˆ(1 + 3)) − 5 ∗ (15.23)/(1 + 2) ∗ 3 − 5\\
+Output3: Parentheses mismatch!\\
+Input4: 2ˆ(1 + 3) − 5 ∗ (15.23)/(1 − 1) ∗ 3 − 5\\
+Output4: The divisor is 0!\\
+
+\end{document}
